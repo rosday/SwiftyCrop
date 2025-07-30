@@ -1,3 +1,3 @@
 public enum MaskShape: CaseIterable {
-    case circle, square, rectangle
+    case circle, square, rectangle, roundedRectangle
 }
