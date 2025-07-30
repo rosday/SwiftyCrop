@@ -257,6 +257,8 @@ struct CropView: View {
           Circle()
         case .square, .rectangle:
           Rectangle()
+        case .roundedRectangle:
+            RoundedRectangle(cornerRadius: 21)
         }
       }
     }

@@ -37,7 +37,7 @@ class CropViewModel: ObservableObject {
         case .circle, .square:
             let diameter = min(maskRadius * 2, min(size.width, size.height))
             maskSize = CGSize(width: diameter, height: diameter)
-        case .rectangle:
+        case .rectangle, .roundedRectangle:
             let maxWidth = min(size.width, maskRadius * 2)
             let maxHeight = min(size.height, maskRadius * 2)
             if maxWidth / maxHeight > rectAspectRatio {
